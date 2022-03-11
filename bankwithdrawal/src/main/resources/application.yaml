@@ -3,9 +3,9 @@ server:
 
 spring:
   application:
-    name: bankaccounts-microservice
+    name: bankwithdrawal-microservice
   config:
-    import: configserver:http://localhost:8888
+    import: configserver:http://localhost:8887
   profiles:
     active: dev
   mvc:
