@@ -1,4 +1,4 @@
-package com.bootcamp.bankwithdrawall.dto;
+package com.bootcamp.bankwithdrawal.dto;
 
 import lombok.*;
 
@@ -7,12 +7,12 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class WithdrawallDto {
+public class WithdrawalDto {
 	private String id;
 	private String balance;
 	private String currency;
 	private String idClient;
-	private String withdrawallNumber;
+	private String withdrawalNumber;
 	private String typeSavingAcc;
 	private String typeCurrentAcc;
 	private String typeTermAcc;
