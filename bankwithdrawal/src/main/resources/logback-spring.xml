@@ -12,7 +12,7 @@
     </appender>
 
     <appender name="RollingFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>${LOGS}/spring-boot-logger.log</file>
+        <file>${LOGS}/spring-withdrawal-logger.log</file>
         <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
             <Pattern>%d %p %C{1.} [%t] %m%n</Pattern>
         </encoder>
@@ -36,7 +36,7 @@
     </root>
 
     <!-- LOG "com.bootcamp*" at TRACE level -->
-    <logger name="com.bootcamp.bankaccount" level="debug" additivity="false">
+    <logger name="com.bootcamp.withdrawal" level="debug" additivity="false">
         <appender-ref ref="RollingFile" />
         <appender-ref ref="Console" />
     </logger>
