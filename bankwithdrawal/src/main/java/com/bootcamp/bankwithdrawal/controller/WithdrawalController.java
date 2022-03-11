@@ -11,7 +11,7 @@ import reactor.core.publisher.Mono;
 
 //@Slf4j
 @RestController
-@RequestMapping(path = "/api/withdrawals")
+@RequestMapping(path = "/api/withdrawal")
 public class WithdrawalController {
     private static final Logger LOGGER = LoggerFactory.getLogger(WithdrawalController.class);
 
