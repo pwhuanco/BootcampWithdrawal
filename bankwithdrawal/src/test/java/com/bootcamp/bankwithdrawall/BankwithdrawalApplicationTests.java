@@ -1,4 +1,4 @@
-package com.bootcamp.bankwithdrawal;
+package com.bootcamp.bankwithdrawall;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

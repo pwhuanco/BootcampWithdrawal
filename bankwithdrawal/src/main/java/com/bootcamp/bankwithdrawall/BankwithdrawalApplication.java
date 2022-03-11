@@ -1,4 +1,4 @@
-package com.bootcamp.bankwithdrawal;
+package com.bootcamp.bankwithdrawall;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
