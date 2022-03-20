@@ -19,31 +19,31 @@ public class WithdrawalController {
     private WithdrawalService withdrawalService;
 
     @GetMapping
-    public Flux<WithdrawalDto> getWithdrawal(){
+    public Flux<WithdrawalDto> getWithdrawal() {
         LOGGER.debug("Getting Withdrawals!");
         return withdrawalService.getWithdrawal();
     }
 
     @GetMapping("/{id}")
-    public Mono<WithdrawalDto> getWithdrawal(@PathVariable String id){
+    public Mono<WithdrawalDto> getWithdrawal(@PathVariable String id) {
         LOGGER.debug("Getting a withdrawals!");
         return withdrawalService.getWithdrawalById(id);
     }
 
     @PostMapping
-    public Mono<WithdrawalDto> saveWithdrawal(@RequestBody Mono<WithdrawalDto> withdrawalDtoMono){
+    public Mono<WithdrawalDto> saveWithdrawal(@RequestBody Mono<WithdrawalDto> withdrawalDtoMono) {
         LOGGER.debug("Saving clients!");
         return withdrawalService.saveWithdrawal(withdrawalDtoMono);
     }
 
     @PutMapping("/{id}")
-    public Mono<WithdrawalDto> updateWithdrawal(@RequestBody Mono<WithdrawalDto> withdrawalDtoMono, @PathVariable String id){
+    public Mono<WithdrawalDto> updateWithdrawal(@RequestBody Mono<WithdrawalDto> withdrawalDtoMono, @PathVariable String id) {
         LOGGER.debug("Updating withdrawals!");
-        return withdrawalService.updateWithdrawal(withdrawalDtoMono,id);
+        return withdrawalService.updateWithdrawal(withdrawalDtoMono, id);
     }
 
     @DeleteMapping("/{id}")
-    public Mono<Void> deleteWithdrawal(@PathVariable String id){
+    public Mono<Void> deleteWithdrawal(@PathVariable String id) {
         LOGGER.debug("Deleting withdrawals!");
         return withdrawalService.deleteWithdrawal(id);
     }
