@@ -12,9 +12,11 @@ public class WithdrawalDto {
     private String balance;
     private String currency;
     private String idClient;
+    private String fromAccountId;
+    private String fromAccountNumber;
+    private String toAccountId;
+    private String toAccountNumber;
     private String withdrawalNumber;
-    private String typeSavingAcc;
-    private String typeCurrentAcc;
-    private String typeTermAcc;
+    private String timestamp;
 
 }

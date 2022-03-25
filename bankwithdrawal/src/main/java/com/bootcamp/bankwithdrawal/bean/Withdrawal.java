@@ -9,12 +9,14 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Withdrawal {
     @Id
     private String id;
-    private String balance;
+    private Double amount;
     private String currency;
     private String idClient;
+    private String fromAccountId;
+    private String fromAccountNumber;
+    private String toAccountId;
+    private String toAccountNumber;
     private String withdrawalNumber;
-    private String typeSavingAcc;
-    private String typeCurrentAcc;
-    private String typeTermAcc;
+    private String timestamp;
 
 }
