@@ -1,0 +1,5 @@
+
+bankwithdrawal/logs/spring-withdrawal-logger.log
+bankwithdrawal/out/artifacts/bankwithdrawal_jar/bankwithdrawal.jar
+*.jar
+bankwithdrawal/out/artifacts/bankwithdrawal_jar/bankwithdrawal.jar

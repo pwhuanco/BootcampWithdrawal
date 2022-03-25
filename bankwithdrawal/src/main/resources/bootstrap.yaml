@@ -7,10 +7,10 @@ spring:
       username: develop
       password: develop
   profiles:
-    active: dev
-  mvc:
-    pathmatch:
-      matching-strategy: ant_path_matcher
+    active: test
+#  mvc:
+#    pathmatch:
+#      matching-strategy: ant_path_matcher
 
 
 
